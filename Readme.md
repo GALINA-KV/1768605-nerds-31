@@ -2,6 +2,7 @@
 
 * Студент: [Галина Колдина](https://up.htmlacademy.ru/htmlcss/31/user/1768605).
 * Наставник: [Семен Якушев](https://htmlacademy.ru/profile/id1118791).
+** Comment
 
 ---
 
