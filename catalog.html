@@ -1,64 +1,66 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
+  <link href="normalize.css" rel="stylesheet"> 
+  <link href="style.css" rel="stylesheet">
   <link rel="icon" href="favicon.ico">
 </head>
 
-<body>
-  <header class="header">
+<body class="page-body">
+  <header class="main-header">
     <div class="header-logo">
-      <a href="index.html">
-        <img src="img/index.html/nerds-logo.svg" width="160" height="65" alt="Логотип Нердс">
+      <a class="main-header-logo">
+        <img src="img/index/nerds-logo.svg" width="160" height="65" alt="Логотип Нердс">
       </a>
-      <nav class="menu">
-        <ul class="menu-list">
-          <li class="menu-list-item"><a href="blank.html">Студия</a></li>
-          <li class="menu-list-item"><a href="blank.html">Клиенты</a></li>
-          <li class="menu-list-item"><a href="blank.html">Магазин</a></li>
-          <li class="menu-list-item"><a href="blank.html">Контакты</a></li>
+      <nav class="main-navigation">
+        <ul class="site-navigation">
+          <li><a href="blank.html">Студия</a></li>
+          <li><a href="blank.html">Клиенты</a></li>
+          <li><a href="blank.html">Магазин</a></li>
+          <li><a href="blank.html">Контакты</a></li>
         </ul>
-        <img src="img/index.html/cart-icon.svg" width="15" height="11" alt="Корзина">
+        <img src="img/index/cart-icon.svg" width="15" height="11" alt="Корзина">
         <a href="blank.html">Корзина</a>
       </nav>
     </div>
   </header>
-  <main>
+  <main class="container">
     <h1>Магазин готовых шаблонов</h1>
-    <section>
+    <section class="blocks">
       <h2>Разделы</h2>
-      <form method="get" action="https://echo.htmlacademy.ru">
+      <form class="appointment-form" method="get" action="https://echo.htmlacademy.ru">
         <fieldset>
           <legend>Стоимость:</legend>
-          <div>
-            <div></div>
-            <div></div>
+          <div class="slider">
+            <div class="line"></div>
+            <div class="circle"></div>
           </div>
-          <ul>
-            <li>
+          <ul class="different-list">
+            <li class="different-item">
               <label for="range-from">от
-                <input type="text" name="range-from" value="0">
+                <input class="different-list-item" type="text" name="range-from" value="0">
               </label>
               <label for="range-before">до
-                <input type="text" name="range-before" value="15000">
+                <input class="different-list-item" type="text" name="range-before" value="15000">
               </label>
             </li>
           </ul>
         </fieldset>
         <fieldset>
           <legend>Сетка:</legend>
-          <ul>
-            <li>
+          <ul class="cell">
+            <li class="cell-item">
               <input type="radio" name="adaptability" value="adaptability" id="filter-adaptability" checked>
               <label for="filter-adaptability-">Адаптивная</label>
             </li>
-            <li>
+            <li class="cell-item">
               <input type="radio" name="fixed" value="fixed" id="filter-fixed">
               <label for="filter-fixed">Фиксированная</label>
             </li>
-            <li>
+            <li class="cell-item">
               <input type="radio" name="ruber" value="ruber" id="filter-ruber">
               <label for="filter-ruber">Резиновая</label>
             </li>
@@ -66,145 +68,135 @@
         </fieldset>
         <fieldset>
           <legend>Особенности:</legend>
-          <ul>
-            <li>
+          <ul class="features-list">
+            <li class="features-item">
               <input type="checkbox" name="slider" id="filter-slider" checked>
               <label for="filter-slider">Слайдер</label>
             </li>
-            <li>
+            <li class="features-item">
               <input type="checkbox" name="advantates" id="filter-advantates">
               <label for="filter-advantates">Блок преимуществ</label>
             </li>
-            <li>
+            <li class="features-item">
               <input type="checkbox" name="news" id="filter-news" checked>
               <label for="filter-news">Новости</label>
             </li>
-            <li>
+            <li class="features-item">
               <input type="checkbox" name="gallery" id="filter-gallery">
               <label for="filter-gallery">Галерея</label>
             </li>
-            <li>
+            <li class="features-item">
               <input type="checkbox" name="basket" id="filter-basket">
               <label for="filter-basket">Корзина</label>
             </li>
           </ul>
-          <button type="submit">Показать</button>
+          <button class="button button-gray" type="submit">Показать</button>
         </fieldset>
       </form>
     </section>
-    <section>
+    <section class="subsection">
       <h3>Сортировать:</h3>
-      <ul>
-        <li>По цене</li>
-        <li>По типу</li>
-        <li>По названию</li>
+      <ul class="subsection-list">
+        <li class="subsection-item">По цене</li>
+        <li class="subsection-item">По типу</li>
+        <li class="subsection-item">По названию</li>
       </ul>
-      <ul>
-        <li>
+      <ul class="pointer">
+        <li class="pointer-list">
           <img src="img/catalog.html/shape.svg" width="11" height="10" alt="Значок вверх">
         </li>
-        <li>
+        <li class="pointer-list">
           <img src="img/catalog.html/shape-grey.svg" width="11" height="10" alt="Значок вниз">
         </li>
       </ul>
-      <ul>
-        <li>
+      <ul class="list-site">
+        <li class="list-site-item">
           <img src="img/catalog.html/browser.svg" width="360" height="40" alt="Форма сайта">
           <img src="img/catalog.html/img-sedona.jpg" width="359" height="578" alt="Сайт Седона">
-          <div>
+          <div class="info-site">
             <h3>Sedona</h3>
             <p>Информационный сайт для туристов</p>
             <span><a href="blank.html">9 900 ₽</a></span>
           </div>
         </li>
-        <li>
+        <li class="list-site-item">
           <img src="img/catalog.html/browser-grey.svg" width="360" height="40" alt="Форма сайта">
           <img src="img/catalog.html/img-pink.jpg" width="359" height="578" alt="Сайт Пинк Апп">
-          <div>
+          <div class="info-site">
             <h3>Pink App</h3>
             <p>Продуктовый лендинг приложения для iOS и Android</p>
             <span><a href="blank.html">9 900 ₽</a></span>
           </div>
         </li>
-        <li>
+        <li class="list-site-item">
           <img src="img/catalog.html/browser-grey.svg" width="360" height="40" alt="Форма сайта">
           <img src="img/catalog.html/img-barbershop.jpg" width="359" height="578" alt="Сайт Барбершоп Бородинский">
-          <div>
+          <div class="info-site">
             <h3>Barbershop</h3>
             <p>Сайт салона красоты.Для мужчин, да.</p>
-            <span><a href="blank.html">9 900 ₽</a></span>
+            <span><a class="price" href="blank.html">9 900 ₽</a></span>
           </div>
         </li>
-        <li>
+        <li class="list-site-item">
           <img src="img/catalog.html/browser-grey.svg" width="360" height="40" alt="Форма сайта">
-          <img src="img/catalog.html/img-mishka.jpg" width="359" height="578" alt="Сайт  Мишка">
-          <div>
+          <img svrc="img/catalog.html/img-mishka.jpg" width="359" height="578" alt="Сайт  Мишка">
+          <div class="info-site">
             <h3>Mishka</h3>
             <p>Интернет-магазин вязаных игрушек</p>
-            <span><a href="blank.html">9 900 ₽</a></span>
+            <span><a class="price" href="blank.html">9 900 ₽</a></span>
           </div>
         </li>
-        <li>
+        <li class="list-site-item">
           <img src="img/catalog.html/browser-grey.svg" width="360" height="40" alt="Форма сайта">
           <img src="img/catalog.html/img-aplus.jpg" width="359" height="578" alt="Сайт А плюс">
-          <div>
+          <div class="info-site">
             <h3>A Plus</h3>
             <p>Лендинг курсов повышения квалификации</p>
-            <span><a href="blank.html">9 900 ₽</a></span>
+            <span><a class="price" href="blank.html">9 900 ₽</a></span>
           </div>
         </li>
-        <li>
+        <li class="list-site-item">
           <img src="img/catalog.html/browser-grey.svg" width="360" height="40" alt="Форма сайта">
           <img src="img/catalog.html/img-kvast.jpg" width="359" height="578" alt="Сайт Кваст">
-          <div>
+          <div class="info-site">
             <h3>КВАСТ</h3>
             <p>Промо-сайт производителя крафтового кваса</p>
-            <span><a href="blank.html">9 900 ₽</a></span>
+            <span><a class="price" href="blank.html">9 900 ₽</a></span>
           </div>
         </li>
       </ul>
-      <ul>
-        <li>
+      <ul class="page-list">
+        <li class="page-list-item">
           <a>1</a>
         </li>
-        <li>
-          <a href="#">2</a>
+        <li class="page-list-item">
+          <a class="next" href="#">2</a>
         </li>
-        <li>
-          <a href="#">3</a>
+        <li class="page-list-item">
+          <a class="next" href="#">3</a>
         </li>
-        <li>
-          <a href="#">4</a>
+        <li class="page-list-item">
+          <a class="next" href="#">4</a>
         </li>
-        <li>
+        <li class="page-list-item">
           <a>Следующая</a>
         </li>
       </ul>
     </section>
   </main>
-  <footer>
+  <footer class="main-footer">
+    <section class="footer-social">
+      <ul>
+        <li><a class="social-button" href="#">В контакте</a></li>
+        <li><a class="social-button" href="#">Фэйсбук</a></li>
+        <li><a class="social-button" href="#">Инстаграмм</a></li>
+      </ul>
+      <div class="discount">
+        <h3 class="footer-title">Давайте дружить, это выгодно!</h3>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
     </section>
-    <section class="cards">
-      <img src="img/index.html/map.png" width="1440" height="416" alt="Карта">
-      <h3>NЁRDS DESIGN STUDIO</h3>
-      <p>наб.Реки Карповки, 5 лит П, Санкт-Петербург<br><a href="tel:+78005558628">+7 800 555-86-28</a></p>
-      <button type="button">Напишите нам</button>
-      <img src="img/index.html/map-marker.svg" width="231" height="190" alt="Нердс">
-    </section>
-    </main>
-    <footer>
-      <section>
-        <ul>
-          <li><a href="#">В контакте</a></li>
-          <li><a href="#">Фэйсбук</a></li>
-          <li><a href="#">Инстаграмм</a></li>
-        </ul>
-        <div>
-          <h3>Давайте дружить, это выгодно!</h3>
-          <p>Скидка 10% для друзей из социальных сетей.</p>
-        </div>
-      </section>
-    </footer>
+  </footer>
 </body>
 
 </html>
