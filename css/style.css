@@ -5,10 +5,11 @@
     --basic-white: #FFFFFF; 
     --basic-black: #000000;
     --basic-dark: #283136;
+    --basic-extra-gray: #4D4D4D;
 }
 
 body {
-  min-width: 960px;
+  width: 1200px;
   margin: 0;
   padding: 0;  
   font-family: "Roboto", Arial, sans-serif;
@@ -45,12 +46,19 @@ img {
 .design-list,
 .conditions-list,
 .logotips-list,
-.footer-social ul {
+.footer-social ul,
+.conditions-item,
+.different-list,
+.cell,
+.features-list,
+.subsection-list,
+.list-site,
+.page-list {
   list-style: none;
  }
 
 .site-navigation a,
-.basket a {
+.basket {
   color: var(--basic-black);
 }
 
@@ -70,6 +78,14 @@ h1 {
   font-weight: 500;
   line-height: 18px;
   border: none;
+}
+
+.button-green {
+  background-color: #00CA74;
+}
+
+.button-yellow {
+  background-color: #EFC849;
 }
 
 h3 {
@@ -168,4 +184,29 @@ sup {
   box-sizing: border-box;
   border-radius: 3px;
   background-color: var(--basic-white);
+}
+
+.price {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--basic-black);
+}
+
+.slider {
+  width: 260px;
+  height: 80px;
+  background-color: var(--basic-light-gray);
+  border-radius: 3px;
+}
+
+.different-list {
+  line-height: 22px;
+  text-transform: uppercase;
+  color: var(--basic-dark);
+}
+
+.cell,
+.features-list {
+  line-height: 20px;
 }

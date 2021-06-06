@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
-  <link href="css/normalize.css" rel="stylesheet"> 
+  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <link rel="icon" href="favicon.ico">
 </head>
@@ -22,8 +22,7 @@
           <li><a href="blank.html">Магазин</a></li>
           <li><a href="blank.html">Контакты</a></li>
         </ul>
-        <img src="img/index/cart-icon.svg" width="15" height="11" alt="Корзина">
-        <a href="blank.html">Корзина</a>
+        <a class="basket" href="blank.html"><img src="img/index/cart-icon.svg" width="15" height="11" alt="Корзина">Корзина</a>
       </nav>
     </div>
   </header>
@@ -33,7 +32,7 @@
       <h2>Разделы</h2>
       <form class="appointment-form" method="get" action="https://echo.htmlacademy.ru">
         <fieldset>
-          <legend>Стоимость:</legend>
+          <legend class="price">Стоимость:</legend>
           <div class="slider">
             <div class="line"></div>
             <div class="circle"></div>
@@ -50,7 +49,7 @@
           </ul>
         </fieldset>
         <fieldset>
-          <legend>Сетка:</legend>
+          <legend class="price">Сетка:</legend>
           <ul class="cell">
             <li class="cell-item">
               <input type="radio" name="adaptability" value="adaptability" id="filter-adaptability" checked>
@@ -103,16 +102,16 @@
       </ul>
       <ul class="pointer">
         <li class="pointer-list">
-          <img src="img/catalog.html/shape.svg" width="11" height="10" alt="Значок вверх">
+          <img src="img/catalog/shape.svg" width="11" height="10" alt="Значок вверх">
         </li>
         <li class="pointer-list">
-          <img src="img/catalog.html/shape-grey.svg" width="11" height="10" alt="Значок вниз">
+          <img src="img/catalog/shape-grey.svg" width="11" height="10" alt="Значок вниз">
         </li>
       </ul>
       <ul class="list-site">
         <li class="list-site-item">
-          <img src="img/catalog.html/browser.svg" width="360" height="40" alt="Форма сайта">
-          <img src="img/catalog.html/img-sedona.jpg" width="359" height="578" alt="Сайт Седона">
+          <img src="img/catalog/browser.svg" width="360" height="40" alt="Форма сайта">
+          <img src="img/catalog/img-sedona.jpg" width="359" height="578" alt="Сайт Седона">
           <div class="info-site">
             <h3>Sedona</h3>
             <p>Информационный сайт для туристов</p>
@@ -120,8 +119,8 @@
           </div>
         </li>
         <li class="list-site-item">
-          <img src="img/catalog.html/browser-grey.svg" width="360" height="40" alt="Форма сайта">
-          <img src="img/catalog.html/img-pink.jpg" width="359" height="578" alt="Сайт Пинк Апп">
+          <img src="img/catalog/browser-grey.svg" width="360" height="40" alt="Форма сайта">
+          <img src="img/catalog/img-pink.jpg" width="359" height="578" alt="Сайт Пинк Апп">
           <div class="info-site">
             <h3>Pink App</h3>
             <p>Продуктовый лендинг приложения для iOS и Android</p>
@@ -129,8 +128,8 @@
           </div>
         </li>
         <li class="list-site-item">
-          <img src="img/catalog.html/browser-grey.svg" width="360" height="40" alt="Форма сайта">
-          <img src="img/catalog.html/img-barbershop.jpg" width="359" height="578" alt="Сайт Барбершоп Бородинский">
+          <img src="img/catalog/browser-grey.svg" width="360" height="40" alt="Форма сайта">
+          <img src="img/catalog/img-barbershop.jpg" width="359" height="578" alt="Сайт Барбершоп Бородинский">
           <div class="info-site">
             <h3>Barbershop</h3>
             <p>Сайт салона красоты.Для мужчин, да.</p>
@@ -138,8 +137,8 @@
           </div>
         </li>
         <li class="list-site-item">
-          <img src="img/catalog.html/browser-grey.svg" width="360" height="40" alt="Форма сайта">
-          <img svrc="img/catalog.html/img-mishka.jpg" width="359" height="578" alt="Сайт  Мишка">
+          <img src="img/catalog/browser-grey.svg" width="360" height="40" alt="Форма сайта">
+          <img src="img/catalog/img-mishka.jpg" width="359" height="578" alt="Сайт Мишка">
           <div class="info-site">
             <h3>Mishka</h3>
             <p>Интернет-магазин вязаных игрушек</p>
@@ -147,8 +146,8 @@
           </div>
         </li>
         <li class="list-site-item">
-          <img src="img/catalog.html/browser-grey.svg" width="360" height="40" alt="Форма сайта">
-          <img src="img/catalog.html/img-aplus.jpg" width="359" height="578" alt="Сайт А плюс">
+          <img src="img/catalog/browser-grey.svg" width="360" height="40" alt="Форма сайта">
+          <img src="img/catalog/img-aplus.jpg" width="359" height="578" alt="Сайт А плюс">
           <div class="info-site">
             <h3>A Plus</h3>
             <p>Лендинг курсов повышения квалификации</p>
@@ -156,8 +155,8 @@
           </div>
         </li>
         <li class="list-site-item">
-          <img src="img/catalog.html/browser-grey.svg" width="360" height="40" alt="Форма сайта">
-          <img src="img/catalog.html/img-kvast.jpg" width="359" height="578" alt="Сайт Кваст">
+          <img src="img/catalog/browser-grey.svg" width="360" height="40" alt="Форма сайта">
+          <img src="img/catalog/img-kvast.jpg" width="359" height="578" alt="Сайт Кваст">
           <div class="info-site">
             <h3>КВАСТ</h3>
             <p>Промо-сайт производителя крафтового кваса</p>
