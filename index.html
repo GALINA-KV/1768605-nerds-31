@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
-  <link href="normalize.css" rel="stylesheet"> 
-  <link href="style.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet"> 
+  <link href="css/style.css" rel="stylesheet">
   <link rel="icon" href="favicon.ico">
 </head>
 
@@ -23,7 +23,7 @@
           <li><a href="blank.html">Контакты</a></li>
         </ul>
         <img src="img/index/cart-icon.svg" width="15" height="11" alt="Корзина">
-        <a href="blank.html">Корзина</a>
+        <a class="basket" href="blank.html">Корзина</a>
       </nav>
     </div>
   </header>
@@ -61,7 +61,7 @@
       <h2>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
       <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая
         рук, как роботы.</p>
-      <p>Выполняем заказы на разработку:</p>
+      <h4 class="list">Выполняем заказы на разработку:</h4>
       <ul class="design-list">
         <li class="design-item">Веб-сайтов любой сложности</li>
         <li class="design-item">Мобильных приложений для iOS и Android</li>
@@ -70,14 +70,14 @@
     </section>
     <section class="conditions">
       <img src="img/index/nerds-illustration.png" width="360" height="208" alt="Нердс">
-      <h3>с 2004 года Любим точность во всем:</h3>
+      <h4>с 2004 года Любим точность во всем:</h4>
       <ul class="conditions-list">
-        <li class="conditions-item">146%</li>
-        <p>Уровень самоотдачи</p>
-        <li class="conditions-item">100%</li>
-        <p>Соблюдение сроков</p>
-        <li class="conditions-item">50%</li>
-        <p>Минимальная предоплата</p>
+        <li class="conditions-item">146<sup>%</sup></li>
+        <p class="conditions-text">Уровень самоотдачи</p>
+        <li class="conditions-item">100<sup>%</sup></li>
+        <p class="conditions-text">Соблюдение сроков</p>
+        <li class="conditions-item">50<sup>%</sup></li>
+        <p class="conditions-text">Минимальная предоплата</p>
       </ul>
     </section>
     <section class="logotips">
@@ -99,7 +99,7 @@
     <section class="contacts">
       <img src="img/index/map.png" width="1440" height="416" alt="Карта">
       <h3 class="contacts-title">NЁRDS DESIGN STUDIO</h3>
-      <p>наб.Реки Карповки, 5 лит П, Санкт-Петербург<br><a class="contacts-phone" href="tel:+78005558628">+7 800
+      <p class="contacts-text">наб.Реки Карповки, 5 лит П, Санкт-Петербург<br><a class="contacts-phone" href="tel:+78005558628">+7 800
           555-86-28</a></p>
       <button class="button" type="button">Напишите нам</button>
       <img src="img/index/map-marker.svg" width="231" height="190" alt="Нердс">
@@ -114,20 +114,20 @@
       </ul>
       <div class="discount">
         <h3 class="footer-title">Давайте дружить, это выгодно!</h3>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
+        <p class="footer-text">Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </section>
   </footer>
   <section class="modal">
     <h2 class="modal-title">Напишите нам</h2>
     <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
-      <label for="name-field">Ваше имя:</label>
-      <label for="mail-field">Ваш email</label>
+      <label class="modal-description" for="name-field">Ваше имя:</label>
+      <label class="modal-description" for="mail-field">Ваш email</label>
       <br>
       <input type="text" name="name" id="name-field" placeholder="Имя Фамилия">
       <input type="text" name="email" id="email-field" placeholder="email@example.com">
       <p>
-        <label for="text-field">Текст письма:</label>
+        <label class="modal-description" for="text-field">Текст письма:</label>
         <br>
         <input type="text" name="text" id="text-field" placeholder="В свободной форме">
       </p>
