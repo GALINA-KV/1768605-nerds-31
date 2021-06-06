@@ -53,7 +53,8 @@ img {
 .features-list,
 .subsection-list,
 .list-site,
-.page-list {
+.page-list,
+.pointer {
   list-style: none;
  }
 
@@ -67,6 +68,7 @@ h1 {
   line-height: 55px;
   font-weight: 500;
   color: var(--basic-black);
+  background-color: var(--basic-light-gray)
 }
 
 .button {
@@ -209,4 +211,53 @@ sup {
 .cell,
 .features-list {
   line-height: 20px;
+}
+
+.button-gray {
+  background-color: var(--basic-light-gray);
+  line-height: 18px;
+  font-weight: 500;
+  color: var(--basic-black);
+}
+
+.content {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.subsection-item {
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--basic-black);
+}
+
+.subsection-item-gray {
+  color: var(--basic-gray);
+}
+
+.info-site {
+  background-color: var(--basic-light-gray);
+}
+
+.introduction {
+  line-height: 18px;
+  color: #666666;
+}
+
+.price {
+  line-height: 18px;
+  color: var(--basic-white);
+}
+
+.page-list {
+  background-color: var(--basic-light-gray);
+  border-radius: 3px;
+}
+
+.next {
+  line-height: 18px;
+  color: var(--basic-black);
 }
