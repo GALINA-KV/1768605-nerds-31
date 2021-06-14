@@ -9,7 +9,7 @@
 }
 
 body {
-  width: 1200px;
+  width: 1158px;
   margin: 0;
   padding: 0;  
   font-family: "Roboto", Arial, sans-serif;
@@ -164,13 +164,19 @@ sup {
 
 .modal {
   background-color: var(--basic-white);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-column: 1fr 1fr 1fr 1fr;
+  gap: 40px;
 }
 
 .modal-title {
   font-weight: bold;
   font-size: 45px;
   line-height: 53px;
-  color: var(--basic-black);
+  color: var(--basic-black); 
+  grid-column: 2 / 6;
+  grid-row: 1 / 2;
 }
 
 .modal-description {
@@ -178,6 +184,12 @@ sup {
   line-height: 18px;
   color: var(--basic-black);
 }
+
+.modal-form {
+  grid-column: 2 / 9;
+  grid-row: 2 / 3;
+}
+
 
 .modal-form input [type="text"] {
   line-height: 18px;
