@@ -6,7 +6,7 @@
     --basic-black: #000000;
     --basic-dark: #283136;
     --basic-extra-gray: #4D4D4D;
-}
+  }
 
 .page-body {
   width: 1158px;
@@ -42,18 +42,27 @@ img {
   height: auto;
 }
 
+.main-header-logo {
+  outline: 2px solid gold;
+}
+
 .main-navigation {
   line-height: 30px;
   font-weight: 500;
   color: var(--basic-black);
   text-transform: uppercase; 
   display: grid;
-  grid-template-columns: min-content 1fr min-content;
+  grid-template-columns: 160px 1fr min-content;
   grid-template-rows: 1fr;
   width: 1159px;
   margin: 49px auto 0 auto;
   padding: 0 10px;
+  outline: 3px solid blue;
 }
+
+.basket {
+  outline: 2px solid gold;
+} 
 
  .site-navigation,
 .technologies-list,
@@ -87,6 +96,16 @@ h1 {
   background-color: var(--basic-light-gray)
 }
 
+.title {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  width: 1159px;
+  margin: 9px auto 0 auto;
+  padding: 0 10px;
+  outline: 3px solid blue; 
+}
+
 .button {
   font: inherit;
   background-color: var(--basic-red);
@@ -104,6 +123,45 @@ h1 {
 
 .button-yellow {
   background-color: #EFC849;
+}
+
+.technologies {
+  outline: 3px solid blue;
+  display: grid;
+  grid-template-columns:  1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  width: 1100px;
+  margin: 80px 200px 80px 140px;
+  padding: 0 10px;
+}
+
+.technologies-item-veb {
+  outline: 2px solid gold;  
+}
+
+.technologies-item-top {
+  outline: 2px solid gold;
+}
+.technologies-item-presents {
+  outline: 2px solid gold;
+}
+
+.wrapper {
+  outline: 3px solid blue;
+  display: grid;
+  grid-template-columns:  651px 360px;
+  grid-template-rows: 1fr;
+  width: 1174px;
+  margin: 39px 140px 73px 140px;
+  padding: 0 10px;
+}
+ 
+.design {
+  outline: 2px solid gold;
+}
+
+.conditions {
+  outline: 2px solid gold;
 }
 
 h3 {
@@ -149,9 +207,19 @@ sup {
 .conditions-text,
 .contacts-text {
   line-height: 18px;
-}
+ }
 
-.contacts-title {
+ .logotips {
+  outline: 3px solid blue;
+  display: grid;
+  grid-template-columns:  1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  width: 1159px;
+  margin: 52px 141px 80px 141px;
+  padding: 0 10px;
+ }
+ 
+ .contacts-title {
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
@@ -164,6 +232,24 @@ sup {
 
 .social-button {
   background: linear-gradient(0deg, #E1E1E1, #E1E1E1), var(--basic-white);
+}
+
+.main-footer {
+  outline: 3px solid blue;
+  display: grid;
+  grid-template-columns:  1fr 660px;
+  grid-template-rows: 1fr;
+  width: 1060px;
+  margin: 75px 240px 74px 140px;
+  padding: 0 10px;
+}
+
+.footer-social {
+  outline: 2px solid gold;
+}
+
+.discount {
+  outline: 2px solid gold;
 }
 
 .footer-title {
