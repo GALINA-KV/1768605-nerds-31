@@ -98,7 +98,7 @@ h1 {
 
 .title {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 760px;
   grid-template-rows: 1fr;
   width: 1159px;
   margin: 9px auto 0 auto;
@@ -125,7 +125,7 @@ h1 {
   background-color: #EFC849;
 }
 
-.technologies {
+.technologies-list {
   outline: 3px solid blue;
   display: grid;
   grid-template-columns:  1fr 1fr 1fr;
@@ -209,7 +209,7 @@ sup {
   line-height: 18px;
  }
 
- .logotips {
+ .logotips-list {
   outline: 3px solid blue;
   display: grid;
   grid-template-columns:  1fr 1fr 1fr 1fr;
@@ -224,7 +224,7 @@ sup {
   font-size: 18px;
   line-height: 30px;
   color: var(--basic-black)
-}  
+ }  
 
 .contacts-phone {
   color: inherit;
@@ -268,7 +268,7 @@ sup {
   background-color: var(--basic-white);
   width: 960px;
   height: 590px;
-  border: 1px solid black;
+  outline: 2px solid blue;
 }
 
 .modal-title {
