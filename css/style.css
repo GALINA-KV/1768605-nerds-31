@@ -218,8 +218,8 @@ sup {
   margin: 52px 141px 80px 141px;
   padding: 0 10px;
  }
- 
- .contacts-title {
+
+  .contacts-title {
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
@@ -293,6 +293,32 @@ sup {
   background-color: var(--basic-white);
 }
 
+.container {
+  display: grid;
+  outline: 2px solid blue;
+  outline-offset: -5px;
+}
+
+h1 {
+  outline: 2px solid gold;
+  outline-offset: -5px;
+}
+
+.page-catalog {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  grid-template-rows: 1fr;
+  margin: 55px 141px 60px 140px; 
+  outline: 3px solid pink;
+  outline-offset: -5px;
+}
+
+.blocks {
+  outline: 2px solid gold;
+  outline-offset: -5px;
+  width: 260px;
+}
+
 .price {
   font-weight: bold;
   font-size: 18px;
@@ -333,9 +359,31 @@ sup {
   color: var(--basic-black);
 }
 
+.subsection {
+  display:grid;
+  grid-template-columns:  1fr 1fr;
+  grid-template-rows: 30px 1fr 50px;
+  width: 761px;
+  grid-column-gap: 41px;
+  margin: 55px 141px 60px 140px;
+  outline: 2px solid red;
+  outline-offset: -5px;
+}
+
+.subsection-list {
+  outline: 2px solid gold;
+  width: 
+  grid-column: 1 / 2 2 / 3;
+  
+  grid-row: 1 / 2;
+  margin-bottom: 48px;
+  width: 761px;
+}
+
 .subsection-item {
   font-size: 14px;
   line-height: 18px;
+  text-transform: uppercase;
   color: var(--basic-black);
 }
 
@@ -345,6 +393,8 @@ sup {
 
 .info-site {
   background-color: var(--basic-light-gray);
+  display: grid;
+  outline: 2px solid gold;
 }
 
 .introduction {
@@ -352,14 +402,31 @@ sup {
   color: #666666;
 }
 
-.price {
-  line-height: 18px;
-  color: var(--basic-white);
+.list-site {
+  display:grid;
+  grid-template-columns:  1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-row: 2 / 3;
+  grid-column-gap: 40px;
+  grid-row-gap: 31px;
+  width: 760px;
+  margin-bottom: 55px;
 }
 
 .page-list {
   background-color: var(--basic-light-gray);
   border-radius: 3px;
+  display:grid;
+  grid-template-columns:  50px 50px 50px 260px;
+  grid-template-rows: 1fr;
+  grid-column-gap: 11px;
+  width: 443px;
+  height: 50px;
+  outline: 1px solid blue;
+}
+
+.page-list-item {
+  outline: 2px solid gold; 
 }
 
 .next {
