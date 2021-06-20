@@ -365,19 +365,22 @@ h1 {
   grid-template-rows: 30px 1fr 50px;
   width: 761px;
   grid-column-gap: 41px;
+  grid-row: 1 /2 2 / 3 3/4;
   margin: 55px 141px 60px 140px;
   outline: 2px solid red;
   outline-offset: -5px;
 }
 
-.subsection-list {
+.subsection-list-m {
   outline: 2px solid gold;
-  width: 
-  grid-column: 1 / 2 2 / 3;
-  
+  grid-template-columns:  134px 1fr 1fr;
+  grid-template-rows: 30px;
+  grid-column: 1 / 2 2 / 3 3 /4;
+  grid-row-start: 1;
   grid-row: 1 / 2;
-  margin-bottom: 48px;
+  margin: 0 0 0 48px;
   width: 761px;
+  z-index: 1;
 }
 
 .subsection-item {
