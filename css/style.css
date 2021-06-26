@@ -9,7 +9,7 @@
   }
 
 .page-body {
-  width: 1158px;
+  width: 1159px;
   margin: 0;
   padding: 0;  
   font-family: "Roboto", Arial, sans-serif;
@@ -42,27 +42,50 @@ img {
   height: auto;
 }
 
-.main-header-logo {
-  outline: 2px solid gold;
-}
-
 .main-navigation {
   line-height: 30px;
   font-weight: 500;
   color: var(--basic-black);
-  text-transform: uppercase; 
-  display: grid;
-  grid-template-columns: 160px 1fr min-content;
-  grid-template-rows: 1fr;
+  text-transform: uppercase;
+  display: flex; 
   width: 1159px;
-  margin: 49px auto 0 auto;
-  padding: 0 10px;
-  outline: 3px solid blue;
-}
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 49px 140px 0 140px;
+  outline: 2px solid gold;
+  }
+
+  .site-navigation {
+    display: flex;
+    width: 440px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    outline: 2px solid gold;
+    justify-content: space-between;
+  }
+
+  .site-navigation li {
+    margin-left: 45px;
+  }
+
+  .site-navigation li:first-child {
+    margin-left: 0;
+  }
 
 .basket {
+  display: flex;
+  width: 115px;
+  min-height: 30px;
   outline: 2px solid gold;
+  margin-left: 246px;
 } 
+
+.basket img {
+  margin-right: 25px;
+}
+
 
  .site-navigation,
 .technologies-list,
@@ -101,9 +124,9 @@ h1 {
   grid-template-columns: 1fr 760px;
   grid-template-rows: 1fr;
   width: 1159px;
-  margin: 9px auto 0 auto;
-  padding: 0 10px;
-  outline: 3px solid blue; 
+  margin-top: 9px;
+  padding: 0 140px 0 140px;
+  outline: 3px solid blue;
 }
 
 .button {
@@ -148,21 +171,27 @@ h1 {
 
 .wrapper {
   outline: 3px solid blue;
-  display: grid;
-  grid-template-columns:  651px 360px;
-  grid-template-rows: 1fr;
+  display: flex;
   width: 1174px;
-  margin: 39px 140px 73px 140px;
-  padding: 0 10px;
+  margin: 39px 126px 73px 140px;
+  padding: 0 5px;
 }
  
 .design {
   outline: 2px solid gold;
+  width: 651px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 34px;
 }
 
 .conditions {
+  display: flex;
+  flex-direction: column;
+  margin: 0 14px 0 149px;
   outline: 2px solid gold;
-}
+  text-align: center;
+ }
 
 h3 {
   font-weight: bold;
@@ -190,11 +219,21 @@ h4 {
   color: var(--basic-black);
 }
 
+.conditions-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 380px;
+  flex-wrap: wrap;
+  
+}
+
 .conditions-item {
   font-weight: bold;
   font-size: 45px;
   line-height: 64px;
   color: var(--basic-black);
+  text-align: left;
 }
 
 sup {
@@ -203,6 +242,11 @@ sup {
   line-height: 40px;
   color: var(--basic-black);
 }
+
+.conditions-text {
+  text-align: left;
+  margin-top: 10px;
+} 
 
 .conditions-text,
 .contacts-text {
@@ -219,6 +263,24 @@ sup {
   padding: 0 10px;
  }
 
+ .contacts {
+   display: flex;
+   flex-direction: row;
+   
+ }
+
+ .contacts-block {
+  width: 319px;
+  height: 308px;
+  outline: 3px solid gold;
+  padding: 0;
+  margin: 54px 981px 54px 140px;
+  position: absolute;
+  background-color: var(--basic-white);
+  text-align: center;
+  z-index: 2;
+ }
+
   .contacts-title {
   font-weight: bold;
   font-size: 18px;
@@ -230,26 +292,51 @@ sup {
   color: inherit;
 }
 
+.contacts-logo {
+  position: absolute;
+  width: 231px;
+  height: 190px;
+  margin: 70px 362px 156px 847px;
+  outline: 2px solid gold;
+}
+
 .social-button {
   background: linear-gradient(0deg, #E1E1E1, #E1E1E1), var(--basic-white);
 }
 
 .main-footer {
   outline: 3px solid blue;
-  display: grid;
-  grid-template-columns:  1fr 660px;
-  grid-template-rows: 1fr;
+  
   width: 1060px;
   margin: 75px 240px 74px 140px;
-  padding: 0 10px;
+  padding: 0 5px;
 }
 
 .footer-social {
   outline: 2px solid gold;
+  display: flex;
+  width: 1060px;
+  height: 81px;
 }
 
-.discount {
+.social-menu {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 261px;
+  padding: 0;
+  margin: 0;
+  }
+
+  .discount {
   outline: 2px solid gold;
+  outline-offset: -2px;
+  width: 660px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 0;
+  margin-left: 139px;
 }
 
 .footer-title {
@@ -257,11 +344,15 @@ sup {
   font-size: 36px;
   line-height: 36px;
   color: var(--basic-black);
+  padding: 0;
+  margin: 0;
 }
 
 .footer-text {
   line-height: 22px;
   color: #444444;
+  padding: 0;
+  margin-top: 10px;
 }
 
 .modal {
