@@ -87,7 +87,7 @@ img {
 }
 
 
- .site-navigation,
+.site-navigation,
 .technologies-list,
 .design-list,
 .conditions-list,
@@ -225,15 +225,16 @@ h4 {
   justify-content: space-between;
   width: 380px;
   flex-wrap: wrap;
+ }
   
-}
-
 .conditions-item {
   font-weight: bold;
   font-size: 45px;
   line-height: 64px;
   color: var(--basic-black);
   text-align: left;
+  margin: 0;
+  padding: 0;
 }
 
 sup {
@@ -244,8 +245,9 @@ sup {
 }
 
 .conditions-text {
+  margin: 0;
+  padding: 0;
   text-align: left;
-  margin-top: 10px;
 } 
 
 .conditions-text,
@@ -390,9 +392,16 @@ sup {
   outline-offset: -5px;
 }
 
-h1 {
+.title-catalog {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  color: var(--basic-black);
+  background-color: var(--basic-light-gray);
   outline: 2px solid gold;
   outline-offset: -5px;
+  margin: 0;
+  padding: 72px 356px 108px 357px;
 }
 
 .page-catalog {
@@ -413,6 +422,7 @@ h1 {
 fieldset {
   padding: 0;
   margin: 0;
+  border: none;
 }
 
 .price {
@@ -427,12 +437,24 @@ fieldset {
   height: 80px;
   background-color: var(--basic-light-gray);
   border-radius: 3px;
+  margin-top: 48px;
 }
 
 .different-list {
   line-height: 22px;
   text-transform: uppercase;
   color: var(--basic-dark);
+  margin-top: 14px;
+}
+
+.different-list-item {
+  width: 80px;
+  height: 38px;
+  margin: 0 33px 54px 11px;
+}
+
+.different-list-item:last-child {
+  margin-right: 0;
 }
 
 .cell,
@@ -440,11 +462,17 @@ fieldset {
   line-height: 20px;
 }
 
+.cell {
+  margin-bottom: 47px;
+}
+
 .button-gray {
   background-color: var(--basic-light-gray);
   line-height: 18px;
   font-weight: 500;
   color: var(--basic-black);
+  margin-top: 50px;
+  padding: 0;
 }
 
 .content {
@@ -453,6 +481,8 @@ fieldset {
   line-height: 30px;
   text-transform: uppercase;
   color: var(--basic-black);
+  margin: 0;
+  padding: 0;
 }
 
 .subsection {
@@ -461,9 +491,25 @@ fieldset {
   grid-template-rows: 30px 1fr 50px;
   width: 761px;
   grid-column-gap: 41px;
-  grid-row:  1 / 2 2 / 3 3 / 4;
-  margin: 55px 141px 60px 141px;
+  grid-row:  1 / 2 2 /3 3 / 4;
+  margin: 0 141px 60px 141px;
+  padding: 0;
   }
+
+.subsection-menu {
+  display: flex;
+  flex-direction: row;
+  }
+
+.subsection-list {
+  display: flex;
+  flex-direction: row;
+  width: 272px;
+  justify-content: space-between;
+  margin-left: 266px;
+  margin-right: 47px;
+}
+
 
 .subsection-item {
   font-size: 14px;
@@ -474,6 +520,13 @@ fieldset {
 
 .subsection-item-gray {
   color: var(--basic-gray);
+}
+
+.pointer {
+  display: flex;
+  flex-direction: row;
+  width: 40px;
+  justify-content:space-between ;
 }
 
 .info-site {
