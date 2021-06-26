@@ -432,6 +432,18 @@ fieldset {
   color: var(--basic-black);
 }
 
+.product-price {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-white);
+  text-align: center;
+  padding: 0;
+  margin: 0 80px 44px 80px;
+  width: 200px;
+  height: 50px;
+  background-color: var(--basic-red);
+}
+
 .slider {
   width: 260px;
   height: 80px;
@@ -481,8 +493,9 @@ fieldset {
   line-height: 30px;
   text-transform: uppercase;
   color: var(--basic-black);
-  margin: 0;
+  margin: 26px 0 12px 0;
   padding: 0;
+  text-align: center;
 }
 
 .subsection {
@@ -532,11 +545,15 @@ fieldset {
   background-color: var(--basic-light-gray);
   display: grid;
   outline: 2px solid gold;
-}
+  width: 360px;
+ }
 
 .introduction {
   line-height: 18px;
   color: #666666;
+  text-align: center;
+  padding: 0;
+  margin: 0 53px 32px 52px;
 }
 
 .list-site {
