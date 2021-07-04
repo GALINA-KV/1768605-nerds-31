@@ -17,12 +17,12 @@
           <img src="img/index/nerds-logo.svg" width="160" height="65" alt="Логотип Нердс">
         </a>
         <ul class="site-navigation">
-          <li><a href="blank.html">Студия</a></li>
-          <li><a href="blank.html">Клиенты</a></li>
-          <li><a href="blank.html">Магазин</a></li>
-          <li><a href="blank.html">Контакты</a></li>
+          <li><a href="index.html">Студия</a></li>
+          <li><a href="index.html">Клиенты</a></li>
+          <li><a href="index.html">Магазин</a></li>
+          <li><a href="index.html">Контакты</a></li>
         </ul>
-        <a class="basket" href="blank.html"><img src="img/index/cart-icon.svg" width="15" height="11" alt="Корзина">
+        <a class="basket" href="index.html"><img src="img/index/cart-icon.svg" width="15" height="11" alt="Корзина">
           Корзина</a>
       </nav>
     </div>
@@ -32,7 +32,7 @@
       <div>
         <h1 class="title-main">Долго, дорого, скурупулезно.</h1>
         <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-        <button class="button" type="button">Узнать больше</button>
+        <button class="button button-title" type="button">Узнать больше</button>
       </div>
       <img src="img/index/nerds-index-slide.png" width="760" height="431" alt="Слайд Нердс">
     </section>
@@ -91,7 +91,7 @@
     <section class="logotips">
       <ul class="logotips-list">
         <li class="logotips-item">
-          <img src="img/index/logo-htmlacademy.svg" width="199" height="57" alt="Хтмл академия">
+          <img src="img/index/logo-htmlacademy.svg" width="199" height="57" fill="#fff" alt="Хтмл академия">
         </li>
         <li class="logotips-item">
           <img src="img/index/logo-style.svg" width="209" height="90" alt="Бородинский">
@@ -111,7 +111,7 @@
         <p class="contacts-text">наб.Реки Карповки, 5 лит П, Санкт-Петербург<br><a class="contacts-phone"
             href="tel:+78005558628">+7 800
             555-86-28</a></p>
-        <button class="button" type="button">Напишите нам</button>
+        <button class="button button-contacts" type="button">Напишите нам</button>
       </div>
       <img class="contacts-logo" src="img/index/map-marker.svg" width="231" height="190" alt="Нердс">
     </section>
@@ -119,9 +119,12 @@
   <footer class="main-footer">
     <section class="footer-social">
       <ul class="social-menu">
-        <li><a class="social-button" href="#"><span class="visually-hidden">В контакте</span></a></li>
-        <li><a class="social-button" href="#"><span class="visually-hidden">Фэйсбук</span></a></li>
-        <li><a class="social-button" href="#"><span class="visually-hidden">Инстаграмм</span></a></li>
+        <li><a class="social-button" href="#"><span class="visually-hidden">В контакте</span><img
+              src="img/icon/vk-icon.svg" width="26" height="15"></a></li>
+        <li><a class="social-button" href="#"><span class="visually-hidden">Фэйсбук</span><img
+              src="img/icon/fb-icon.svg" width="12" height="22"></a></li>
+        <li><a class="social-button" href="#"><span class="visually-hidden">Инстаграмм</span><img
+              src="img/icon/insta-icon.svg" width="15" height="9"></a></li>
       </ul>
       <div class="discount">
         <h3 class="footer-title">Давайте дружить, это выгодно!</h3>
@@ -132,18 +135,20 @@
   <section class="modal">
     <h2 class="modal-title">Напишите нам</h2>
     <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
-      <label class="modal-description" for="name-field">Ваше имя:</label>
-      <label class="modal-description" for="mail-field">Ваш email</label>
-      <br>
-      <input type="text" name="name" id="name-field" placeholder="Имя Фамилия">
-      <input type="text" name="email" id="email-field" placeholder="email@example.com">
-      <p>
-        <label class="modal-description" for="text-field">Текст письма:</label>
-        <br>
+      <p class="modal-item">
+        <label class="modal-description" for="name-field">Ваше имя:</label><br>
+        <input type="text" name="name" id="name-field" placeholder="Имя Фамилия">
+      </p>
+      <p class="modal-item">
+        <label class="modal-description" for="mail-field">Ваш email:</label><br>
+        <input type="text" name="email" id="email-field" placeholder="email@example.com">
+      </p>
+      <p class="modal-item-mail">
+        <label class="modal-description" for="text-field">Текст письма:</label><br>
         <input type="text" name="text" id="text-field" placeholder="В свободной форме">
       </p>
     </form>
-    <button class="button" type="button">Отправить</button>
+    <button class="button button-modal" type="button">Отправить</button>
     <button class="modal-close" type="button">Закрыть</button>
   </section>
 
