@@ -526,7 +526,7 @@ sup {
   padding: 0;
 }
   
-  .discount {
+.discount {
   width: 660px;
   display: flex;
   flex-direction: column;
@@ -991,12 +991,18 @@ fieldset {
   border-radius: 3px;
 }
 
-.page-list-item .number:hover {
+.page-list-item .number:hover,
+.page-list-item .next:hover {
   background-color: #DFDFDF;
 }
 
-.page-list-item .number:active {
+.page-list-item .number:active,
+.page-list-item .next:active {
   background-color: #D5D5D5;
+}
+
+.page-list-item .active {
+  background-color: #DBDBDB;
 }
 
 .page-list-item .next {
