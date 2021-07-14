@@ -585,7 +585,7 @@ sup {
   background-color: var(--basic-white);
   width: 960px;
   padding: 63px 100px 84px 100px;
-  position: fixe;
+  position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
